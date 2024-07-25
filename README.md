@@ -5,7 +5,7 @@ This script can disable or enable all GCP services for all Projects under a give
 
 You can download an <api_key_file> from the Uptycs UI under: Configuration - Your_User 
 
-The GCP `<org_id>` and `<folder>` are inputs to the script, along with <action> of 'enable' or 'disable'. 
+The GCP `<org_id>` and `<folder>` are inputs to the script, along with an `<action>` of 'enable' or 'disable'. 
 
 The script works by querying the Uptycs Global database for the GCP Projects belonging to the given 
 org_id and folder using this SQL: 
