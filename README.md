@@ -1,8 +1,9 @@
 # gcp-service-disable-enable
 This script can disable or enable all GCP services for all Projects under a given Folder. If disabled, Uptycs will no longer make GCP API calls to ingest CSPM object data for those services.   
 
-`Usage: gcp_services.py -k <api_key_file> -a enable|disable -o <org_id> -f <folder>')
-        gcp_services.py --keyfile <api_key_file> --action enable|disable --org_id <org_id> --folder <folder>`
+`Usage: \
+gcp_services.py -k <api_key_file> -a enable|disable -o <org_id> -f <folder>')\
+gcp_services.py --keyfile <api_key_file> --action enable|disable --org_id <org_id> --folder <folder>`\
 
 You can download an <api_key_file> from the Uptycs UI under Configuration - <your user>
 
