@@ -21,4 +21,4 @@ If the cloud account is of type GCP and in the list created by the above SQL the
 certain JSON elements from the GET JSON. Removed elements include 'createdAt', 'id', 'updatedAt', 'customerId','deployerNode', etc.  
 and sets status = 'enable' or 'disable' for all the services (depending on the input `<action>`).
 
-Finally the script calls `PUT /cloudAccounts/<id> <cloud_acct_put_json>` to update the cloud account. 
+Finally the script calls `PUT /cloudAccounts/<id> <cloud_acct_put_json>` to update each cloud account. 
