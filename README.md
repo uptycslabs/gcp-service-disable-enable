@@ -3,7 +3,7 @@ This script can disable or enable all GCP services for all Projects under a give
 
 `Usage: gcp_services.py -k <api_key_file> -a enable|disable -o <org_id> -f <folder>`
 
-You can download an <api_key_file> from the Uptycs UI under Configuration - <your user>
+You can download an <api_key_file> from the Uptycs UI under Configuration - Your_User 
 
 The GCP <org_id> and <folder> are inputs to the script, along with <action> of 'enable' or 'disable'. 
 
