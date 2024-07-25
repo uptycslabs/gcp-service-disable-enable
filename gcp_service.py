@@ -1,5 +1,5 @@
 """
-gcp_services.py
+gcp_service.py
 This script enables or disables Uptycs ingestion for all GCP services in all projects under a folder.
 Note if new JSON elements are added by Uptycs to the 'GET cloudAccounts' JSON then we may need to
 add to the exclude_list in remove_elements().
@@ -70,8 +70,8 @@ for i in range(1, len(sys.argv)):
         action = sys.argv[i + 1]
 
 if (not api_key_file or not org or not folder) or action not in ('enable', 'disable'):
-    print('Usage: gcp_services.py -k <api_key_file> -a enable|disable -o <org_id> -f <folder>')
-    print('Or:    gcp_services.py --keyfile <api_key_file> --action enable|disable --org_id <org_id> --folder <folder>')
+    print('Usage: gcp_service.py -k <api_key_file> -a enable|disable -o <org_id> -f <folder>')
+    print('Or:    gcp_service.py --keyfile <api_key_file> --action enable|disable --org_id <org_id> --folder <folder>')
     sys.exit(1)
 else:
     print('Processing GCP projects in org_id: %s and folder: %s' % (org, folder))
