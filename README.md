@@ -18,6 +18,6 @@ org_id and folder using this SQL:
 The script then calls the API `GET /cloudAccounts` to get all integrated cloud accounts and loops thru them. 
 If the cloud account is of type GCP and in the list created by the above SQL then it creates 'PUT suitable' JSON by removing 
 certain JSON elements from the GET JSON. Removed elements include 'createdAt', 'id', 'updatedAt', 'customerId','deployerNode', etc.  
-and sets status = 'enable' or 'disable' for all the services (depending on the input <action>.
+and sets status = 'enable' or 'disable' for all the services (depending on the input `<action>`).
 
 Finally the script calls `PUT /cloudAccounts/<id> <cloud_acct_put_json>` to update the cloud account. 
